@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0a8768-daff-47dc-8bc5-a24d01e1c448" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apipackage/blacklist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/models/item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/models/store.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/resources/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/resources/item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/resources/store.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apipackage/resources/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textanalysis/classification/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textanalysis/clustering/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textanalysis/prediction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textanalysis/sentiments/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textanalysis/wordcloud/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userpropensityengine/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mymain.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apipackage/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientSetup/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/clientsetup/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomModels/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custommodels/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageAnalysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/imageanalysis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MachineLearningEngine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/imageanalysis/facecomparison/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLPEngine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/imageanalysis/facerecognition/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemSettings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearningengine/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TextAnalysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlpengine/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserPropensityEngine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/systemsettings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/textanalysis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +47,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="128">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,6 +65,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TokenRefresh</find>
+      <find>BLACKLIST</find>
+      <find>db</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -39,6 +80,14 @@
       <list>
         <option value="$PROJECT_DIR$/myprogrammain.py" />
         <option value="$PROJECT_DIR$/mymain.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/apipackage/models/item.py" />
+        <option value="$PROJECT_DIR$/apipackage/models/store.py" />
+        <option value="$PROJECT_DIR$/apipackage/models/user.py" />
+        <option value="$PROJECT_DIR$/apipackage/resources/item.py" />
+        <option value="$PROJECT_DIR$/apipackage/resources/store.py" />
+        <option value="$PROJECT_DIR$/apipackage/resources/user.py" />
       </list>
     </option>
   </component>
@@ -62,7 +111,7 @@
             <path>
               <item name="AgiEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="AgiEngine" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="imageanalysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -73,8 +122,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Apis" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Apis" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -87,6 +142,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AgiEngine" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -109,12 +192,12 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Python Console" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -127,10 +210,78 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/models/item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/models/store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/resources/item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/resources/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/resources/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/db.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apipackage/blacklist.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
