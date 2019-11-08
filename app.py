@@ -4,12 +4,12 @@ from flask_jwt_extended import JWTManager
 
 from apipackage.db import db
 from apipackage.blacklist import BLACKLIST
-from apipackage.resources.user import UserRegister, UserLogin, User, TokenRefresh, UserLogout
-from apipackage.resources.item import Item, ItemList
-from apipackage.resources.store import Store, StoreList
+from apipackage.resources.user import UserRegister, UserLogin, User, TokenRefresh, UserLogout,UserList,UserMakeAdmin,UserRemoveAdmin
+from utils import urls as utilsimports
+from apipackage.models.user import UserModel
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = utilsimports.sqliteDatabse
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['PROPAGATE_EXCEPTIONS'] = True
 api = Api(app)
@@ -19,7 +19,7 @@ JWT related configuration. The following functions includes:
 1) add claims to each jwt
 2) customize the token expired error message 
 """
-app.config['JWT_SECRET_KEY'] = 'jose'  # we can also use app.secret like before, Flask-JWT-Extended can recognize both
+app.config['JWT_SECRET_KEY'] = 'future_ai_systems'
 app.config['JWT_BLACKLIST_ENABLED'] = True  # enable blacklist feature
 app.config['JWT_BLACKLIST_TOKEN_CHECKS'] = ['access', 'refresh']  # allow blacklisting for access and refresh tokens
 jwt = JWTManager(app)
@@ -31,7 +31,8 @@ one possible use case for claims are access level control, which is shown below
 """
 @jwt.user_claims_loader
 def add_claims_to_jwt(identity):
-    if identity == 1:   # instead of hard-coding, we should read from a config file to get a list of admins instead
+    user = UserModel.check_if_admin(identity)
+    if user:
         return {'is_admin': True}
     return {'is_admin': False}
 
@@ -91,15 +92,22 @@ def create_tables():
     db.create_all()
 
 
-api.add_resource(Store, '/store/<string:name>')
-api.add_resource(StoreList, '/stores')
-api.add_resource(Item, '/item/<string:name>')
-api.add_resource(ItemList, '/items')
+# Api resources below
+
+# Reg and Auth
 api.add_resource(UserRegister, '/register')
 api.add_resource(UserLogin, '/login')
-api.add_resource(User, '/user/<int:user_id>')
 api.add_resource(TokenRefresh, '/refresh')
 api.add_resource(UserLogout, '/logout')
+
+# User Manipulation Api's
+api.add_resource(UserList, '/users')
+api.add_resource(User, '/user/<string:email>')
+api.add_resource(UserMakeAdmin, '/user_privilegedMakeAdmin/<string:email>')
+api.add_resource(UserRemoveAdmin, '/user_privilegedRemoveAdmin/<string:email>')
+
+# Image Analysis Api's
+
 
 if __name__ == '__main__':
     db.init_app(app)
