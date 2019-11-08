@@ -80,6 +80,11 @@
               <item name="AgiEngine" type="b2602c69:ProjectViewProjectNode" />
               <item name="AgiEngine" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AgiEngine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AgiEngine" type="462c0819:PsiDirectoryNode" />
+              <item name="custommodels" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -156,12 +161,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="3" />
