@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 from werkzeug.security import safe_str_cmp
-from datetime import datetime
+from datetime import datetime, timedelta
 from flask_jwt_extended import (
     create_access_token,
     create_refresh_token,
@@ -101,7 +101,9 @@ class UserLogin(Resource):
         user = UserModel.find_by_email(data['email'])
 
         if user and safe_str_cmp(user.password, data['password']):
-            access_token = create_access_token(identity=user.userid, fresh=True)
+            access_token = create_access_token(identity=user.userid,
+                                               fresh=True,
+                                               expires_delta=timedelta(seconds=86400))
             refresh_token = create_refresh_token(user.userid)
             return {
                        'access_token': access_token,

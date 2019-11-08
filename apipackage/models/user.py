@@ -4,17 +4,17 @@ from apipackage.db import db
 class UserModel(db.Model):
     __tablename__ = 'users'
 
-    userid = db.Column(db.Integer, primary_key=True)
-    password = db.Column(db.String(80))
-    lastname = db.Column(db.String(80))
-    firstname = db.Column(db.String(80))
-    othernames = db.Column(db.String(80))
-    phone = db.Column(db.String(30))
-    email = db.Column(db.String(50),unique=True,index=True)
-    orgnaisionationame = db.Column(db.String(80))
-    country = db.Column(db.String(80))
-    isAdmin = db.Column(db.Integer)
-    datetime = db.Column(db.String(80))
+    userid = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    password = db.Column(db.String(80), nullable=False)
+    lastname = db.Column(db.String(80), nullable=False)
+    firstname = db.Column(db.String(80), nullable=False)
+    othernames = db.Column(db.String(80), nullable=False)
+    phone = db.Column(db.String(30), nullable=False)
+    email = db.Column(db.String(50), unique=True, index=True, nullable=False)
+    orgnaisionationame = db.Column(db.String(80), nullable=False)
+    country = db.Column(db.String(80), nullable=False)
+    isAdmin = db.Column(db.Integer, nullable=False)
+    datetime = db.Column(db.String(80), nullable=False)
 
     def __init__(self, email, password, lastname, firstname, othernames, phone, country, orgnaisionationame, datetime, isAdmin):
         self.password = password
