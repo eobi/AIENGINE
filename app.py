@@ -7,6 +7,8 @@ from apipackage.blacklist import BLACKLIST
 from apipackage.resources.user import UserRegister, UserLogin, User, TokenRefresh, UserLogout,UserList,UserMakeAdmin,UserRemoveAdmin
 from utils import urls as utilsimports
 from apipackage.models.user import UserModel
+from apipackage.resources.imageanalysis import FaceRecognitionResource
+from apipackage.resources.textanalysis import TextAnalysisResource
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = utilsimports.sqliteDatabse
@@ -107,6 +109,10 @@ api.add_resource(UserMakeAdmin, '/user_privilegedMakeAdmin/<string:email>')
 api.add_resource(UserRemoveAdmin, '/user_privilegedRemoveAdmin/<string:email>')
 
 # Image Analysis Api's
+api.add_resource(FaceRecognitionResource, '/facerecognition')  #Face Recognition Api
+
+# Text Analysis Api's
+api.add_resource(TextAnalysisResource, '/textanalysis')
 
 
 if __name__ == '__main__':
