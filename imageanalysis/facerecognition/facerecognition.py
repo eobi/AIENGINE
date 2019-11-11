@@ -18,9 +18,9 @@ class FaceRecognition:
         fullname = str(name) + ".jpg"
 
         # Load the known images
-        image_of_person_1 = face_recognition.load_image_file("/Users/USER/PycharmProjects/AgiEngine/imageanalysis/facerecognition/obi.jpg")
-        image_of_person_2 = face_recognition.load_image_file("/Users/USER/PycharmProjects/AgiEngine/imageanalysis/facerecognition/koku.jpg")
-        image_of_person_3 = face_recognition.load_image_file("/Users/USER/PycharmProjects/AgiEngine/imageanalysis/facerecognition/person_3.jpg")
+        image_of_person_1 = face_recognition.load_image_file("../imageanalysis/facerecognition/obi.jpg")
+        image_of_person_2 = face_recognition.load_image_file("../imageanalysis/facerecognition/koku.jpg")
+        image_of_person_3 = face_recognition.load_image_file("../imageanalysis/facerecognition/person_3.jpg")
 
         # Get the face encoding of each person. This can fail if no one is found in the photo.
         person_1_face_encoding = face_recognition.face_encodings(image_of_person_1)[0]
