@@ -18,9 +18,9 @@ class FaceRecognition:
         fullname = str(name) + ".jpg"
 
         # Load the known images
-        image_of_person_1 = face_recognition.load_image_file("obi.jpg")
-        image_of_person_2 = face_recognition.load_image_file("koku.jpg")
-        image_of_person_3 = face_recognition.load_image_file("person_3.jpg")
+        image_of_person_1 = face_recognition.load_image_file(os.path.realpath('obi.jpg'))
+        image_of_person_2 = face_recognition.load_image_file(os.path.realpath('koku.jpg'))
+        image_of_person_3 = face_recognition.load_image_file(os.path.realpath('person_3.jpg'))
 
         # Get the face encoding of each person. This can fail if no one is found in the photo.
         person_1_face_encoding = face_recognition.face_encodings(image_of_person_1)[0]
