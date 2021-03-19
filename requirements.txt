@@ -40,7 +40,7 @@ nltk==3.4.5
 numpy==1.17.3
 oauth2client==3.0.0
 passlib==1.7.1
-Pillow==6.2.1
+Pillow==8.1.1
 protobuf==3.10.0
 pyasn1==0.4.7
 pyasn1-modules==0.2.7
