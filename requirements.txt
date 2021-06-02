@@ -56,7 +56,7 @@ six==1.13.0
 speaklater==1.3
 SQLAlchemy==1.3.10
 textblob==0.15.3
-urllib3==1.25.6
+urllib3==1.26.5
 virtualenv==16.6.1
 Werkzeug==0.16.0
 WTForms==2.2.1
